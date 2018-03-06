@@ -1,0 +1,11 @@
+#Name: 1
+#    link: http://example.com
+#    avatar: http://example.com/avatar.png
+#    descr: "这是一个描述"
+#
+#Name1: 2
+#    link: http://example1.com
+#    avatar: http://example1.com/avatar.png
+#    descr: "这是一个描述1"
+HEXO: https://hexo.io/zh-cn/index.html
+主题: https://github.com/iTimeTraveler/hexo-theme-hiero

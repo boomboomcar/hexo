@@ -1,0 +1,26 @@
+<footer id="footer" class="site-footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> All Rights Reserved.
+          <% if (theme.busuanzi_analytics){ %>
+            <span id="busuanzi_container_site_uv">
+              <br>访客数<span id="busuanzi_value_site_uv"></span>人&nbsp;&nbsp;
+              访问量<span id="busuanzi_value_site_pv"></span>次</br>
+            </span>
+          <% } %>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
